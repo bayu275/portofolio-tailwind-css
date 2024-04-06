@@ -16,6 +16,9 @@ module.exports = {
             screens: {
                 '2xl': '1320px',
             },
+            boxShadow: {
+                'header-shadow': 'inset 0 -1px 0 0 rgba(0, 0, 0, 0.1)',
+            },
         },
     },
     plugins: [],
