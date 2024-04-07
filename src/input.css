@@ -7,11 +7,11 @@ body {
 }
 
 .scroll-header {
-  @apply fixed z-[100] bg-white bg-opacity-80 shadow-header-shadow backdrop-blur-[5px];
+  @apply z-[100] bg-white bg-opacity-80 shadow-header-shadow backdrop-blur-[5px] dark:bg-dark dark:bg-opacity-50;
 }
 
 .hamburger-line {
-  @apply my-2 block h-[2px] w-[30px] bg-dark transition duration-300 ease-in-out;
+  @apply my-2 block h-[2px] w-[30px] bg-dark transition duration-300 ease-in-out dark:bg-white;
 }
 
 .show-menu > span:nth-child(1) {
@@ -26,8 +26,10 @@ body {
   @apply -rotate-45;
 }
 
-@layer utilities {
-  .show-scroll {
-    bottom: 1rem;
-  }
+.show-scroll {
+  bottom: 1rem;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
 }
